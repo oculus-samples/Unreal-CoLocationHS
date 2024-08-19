@@ -43,7 +43,7 @@ FString UCoLocationHSBPLibrary::GetLocalPlayerOculusNetID()
 bool UCoLocationHSBPLibrary::GetDeviceSupportsLocalMultiplayer()
 {
 	EOculusXRDeviceType type = UOculusXRFunctionLibrary::GetDeviceType();
-	bool supported = (type == EOculusXRDeviceType::MetaQuestPro) || (type == EOculusXRDeviceType::MetaQuestProLink) || (type == EOculusXRDeviceType::OculusQuest2) || (type == EOculusXRDeviceType::Quest2_Link);
+	bool supported = (type == EOculusXRDeviceType::MetaQuestPro) || (type == EOculusXRDeviceType::MetaQuestProLink) || (type == EOculusXRDeviceType::OculusQuest2) || (type == EOculusXRDeviceType::Quest2_Link) || (type == EOculusXRDeviceType::MetaQuest3) || (type == EOculusXRDeviceType::MetaQuest3Link);
 
 	return supported;
 }
