@@ -3,6 +3,10 @@
 
 ## How to Use
 
+### Prerequisites
+
+Follow the [prerequisites steps described in here](https://developer.oculus.com/documentation/unreal/unreal-spatial-anchors-sharing#prerequisites) in order for the sample to have the required entitlements.
+
 ### Load the project
 
 First, ensure you have Git LFS installed by running this command:
