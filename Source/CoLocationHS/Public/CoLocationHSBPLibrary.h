@@ -17,10 +17,6 @@ class COLOCATIONHS_API UCoLocationHSBPLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 public:
-	/* Gets the Oculus Net ID for the specified player controller */
-	UFUNCTION(BlueprintCallable, Category = "Oculus|CoLocation")
-	static FString GetLocalPlayerOculusNetID();
-	
 	/* Checks if the current device supports local multiplayer */
 	UFUNCTION(BlueprintCallable, Category = "Oculus|CoLocation")
 	static bool GetDeviceSupportsLocalMultiplayer();

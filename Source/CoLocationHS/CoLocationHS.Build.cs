@@ -30,8 +30,6 @@ public class CoLocationHS : ModuleRules
             {
                 "Slate",
                 "SlateCore",
-                "OnlineSubsystem",
-                "OnlineSubsystemOculus"
             });
 
         if (Target.Platform != UnrealTargetPlatform.Android)

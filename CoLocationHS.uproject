@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "",
+	"EngineAssociation": "5.4",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -15,10 +15,6 @@
 		}
 	],
 	"Plugins": [
-		{
-			"Name": "OnlineSubsystemOculus",
-			"Enabled": true
-		},
 		{
 			"Name": "OculusXR",
 			"Enabled": true,
