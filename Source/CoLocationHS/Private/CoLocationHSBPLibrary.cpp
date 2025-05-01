@@ -12,7 +12,11 @@ LICENSE file in the root directory of this source tree.
 bool UCoLocationHSBPLibrary::GetDeviceSupportsLocalMultiplayer()
 {
 	const EOculusXRDeviceType Type = UOculusXRFunctionLibrary::GetDeviceType();
-	const bool bSupported = (Type == EOculusXRDeviceType::MetaQuestPro) || (Type == EOculusXRDeviceType::MetaQuestProLink) || (Type == EOculusXRDeviceType::OculusQuest2) || (Type == EOculusXRDeviceType::Quest2_Link) || (Type == EOculusXRDeviceType::MetaQuest3) || (Type == EOculusXRDeviceType::MetaQuest3Link) || (Type == EOculusXRDeviceType::MetaQuest3S) || (Type == EOculusXRDeviceType::MetaQuest3SLink);
-
-	return bSupported;
+	const bool bNotSupported = Type == EOculusXRDeviceType::Rift
+		|| Type == EOculusXRDeviceType::Rift_S
+		|| Type == EOculusXRDeviceType::OculusUnknown
+		|| Type == EOculusXRDeviceType::OculusMobile_Deprecated0
+		|| Type == EOculusXRDeviceType::OculusQuest_Deprecated
+		|| Type == EOculusXRDeviceType::Quest_Link_Deprecated;
+	return !bNotSupported;
 }
