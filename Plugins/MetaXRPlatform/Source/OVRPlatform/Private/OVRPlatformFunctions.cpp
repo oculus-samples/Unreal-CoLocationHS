@@ -105,7 +105,11 @@ bool UOvrFunctionsBlueprintLibrary::Platform_IsInitialized()
 
 FOvrId UOvrFunctionsBlueprintLibrary::Platform_GetLoggedInUserID()
 {
+#if PLATFORM_WINDOWS && WITH_EDITOR
+    return FOvrId{};
+#else
     return FOvrId(ovr_GetLoggedInUserID());
+#endif
 }
 
 FString UOvrFunctionsBlueprintLibrary::Platform_GetLoggedInUserLocale()
